@@ -23,6 +23,10 @@ function fetchJson(url) {
   });
 }
 
+function isLower(str) {
+  return str === str.toLowerCase() && str !== str.toUpperCase();
+}
+
 async function main() {
   const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/releases`;
   const releases = await fetchJson(apiUrl);
@@ -34,18 +38,27 @@ async function main() {
     const [name, versionTag] = rel.tag_name.split("-v");
     const version = versionTag;
 
+    let title = "";
+    title += name.charAt(0).toUpperCase();
+    for (const char of name.slice(1)) {
+      if (!isLower(char)) title += " ";
+      title += char;
+    }
+
     const asset = rel.assets.find((a) => a.name.endsWith(".zip"));
     if (!asset) continue;
 
-    const downloadUrl = asset.browser_download_url;
+    const downloadURL = asset.browser_download_url;
 
     if (!modulesMap[name]) {
       modulesMap[name] = {
+        title,
         name,
-        title: name.charAt(0).toUpperCase() + name.slice(1),
         description: "",
+        iconName: "",
+        color: "",
         latestVersion: version,
-        downloadUrl,
+        downloadURL,
       };
     } else {
       if (modulesMap[name].latestVersion < version) {
