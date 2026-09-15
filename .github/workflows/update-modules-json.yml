@@ -1,0 +1,28 @@
+name: Update modules.json
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  update-modules-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run update script
+        run: node scripts/update-modules-json.js
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add modules.json
+          git commit -m "Update modules.json from releases" || echo "No changes"
+          git push
