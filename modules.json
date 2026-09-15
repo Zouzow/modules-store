@@ -1,4 +1,4 @@
-{
+[
   {
     "title": "Budget",
     "name": "budget",
@@ -17,5 +17,4 @@
     "latestVersion": "0.0.1",
     "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/budget-v0.0.1.zip",
   };
-}
-
+]
