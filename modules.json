@@ -9,12 +9,12 @@
     "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/budget-v0.0.1.zip"
   },
   {
-    "title": "Budget2",
-    "name": "budget2",
-    "description": "Gérez vos dépenses.",
-    "iconName": "cash",
-    "color" : "#2d2add",
-    "latestVersion": "0.0.1",
+    "title": "Calendrier",
+    "name": "calendrier",
+    "description": "Plannifiez et organisez vos évènements. Ne ratez plus rien avec un calendrier !",
+    "iconName": "calendar",
+    "color" : "#a5810a",
+    "latestVersion": "0.0.2,
     "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/budget-v0.0.1.zip"
   }
 ]
