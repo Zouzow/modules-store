@@ -4,7 +4,7 @@
     "name": "budget",
     "description": "Gérez vos dépenses.",
     "iconName": "cash",
-    "color" : "#2d2add",
+    "color": "#2d2add",
     "latestVersion": "0.0.1",
     "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/budget-v0.0.1.zip"
   },
@@ -13,7 +13,7 @@
     "name": "calendrier",
     "description": "Plannifiez et organisez vos évènements. Ne ratez plus rien avec un calendrier !",
     "iconName": "calendar",
-    "color" : "#a5810a",
+    "color": "#a5810a",
     "latestVersion": "0.0.2",
     "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/budget-v0.0.1.zip"
   },
@@ -22,7 +22,7 @@
     "name": "taches",
     "description": "N'oubliez rien en organisant vos todo's !",
     "iconName": "checkmark",
-    "color" : "#0aa539",
+    "color": "#0aa539",
     "latestVersion": "0.1.0",
     "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/budget-v0.0.1.zip"
   }
