@@ -16,5 +16,14 @@
     "color" : "#a5810a",
     "latestVersion": "0.0.2",
     "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/budget-v0.0.1.zip"
+  },
+  {
+    "title": "Tâches",
+    "name": "taches",
+    "description": "N'oubliez rien en organisant vos todo's !",
+    "iconName": "checkmark",
+    "color" : "#0aa539",
+    "latestVersion": "0.1.0",
+    "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/budget-v0.0.1.zip"
   }
 ]
