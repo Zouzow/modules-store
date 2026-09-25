@@ -14,8 +14,8 @@
     "description": "Plannifiez et organisez vos évènements. Ne ratez plus rien avec un calendrier !",
     "iconName": "calendar",
     "color": "#a5810a",
-    "latestVersion": "0.0.2",
-    "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/budget-v0.0.1.zip"
+    "latestVersion": "0.0.1",
+    "downloadURL": "https://github.com/Zouzow/modules-store/releases/download/calendrier-v0.0.1.zip"
   },
   {
     "title": "Tâches",
